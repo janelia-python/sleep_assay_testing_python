@@ -1,0 +1,22 @@
+#+TITLE: sleep_assay_testing_python
+#+AUTHOR: Peter Polidoro
+#+EMAIL: peterpolidoro@gmail.com
+
+* Package Information
+  - Name :: sleep_assay_testing_python
+  - Version :: 1.0.0
+  - License :: BSD
+  - URL :: https://github.com/janelia-pypi/sleep_assay_testing_python
+  - Author :: Peter Polidoro
+  - Email :: peterpolidoro@gmail.com
+
+  This Python package (sleep_assay_testing) creates a class named
+  SleepAssayTesting.
+
+* Example Usage
+
+
+  #+BEGIN_SRC python
+    from sleep_assay_testing import SleepAssayTesting
+    dev = SleepAssayTesting()
+  #+END_SRC
