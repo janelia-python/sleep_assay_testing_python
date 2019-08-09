@@ -1,15 +1,5 @@
 [
   {
-    "assay_day": 0.208333,
-    "phase": "ENTRAINMENT",
-    "phase_day": 0.208333,
-    "visible_backlight_intensity": 0.0,
-    "white_light_power": 10.0,
-    "buzzer_power": 0.0,
-    "buzzing": false,
-    "testing": true
-  },
-  {
     "assay_day": 0.25,
     "phase": "ENTRAINMENT",
     "phase_day": 0.25,
@@ -554,7 +544,7 @@
     "phase": "ENTRAINMENT",
     "phase_day": 2.5,
     "visible_backlight_intensity": 0.0,
-    "white_light_power": 0.0,
+    "white_light_power": 10.0,
     "buzzer_power": 0.0,
     "buzzing": false,
     "testing": true
@@ -673,8 +663,8 @@
     "assay_day": 3.0,
     "phase": "EXPERIMENT",
     "phase_day": 0.0,
-    "visible_backlight_intensity": 10.0,
-    "white_light_power": 10.0,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
     "buzzer_power": 0.0,
     "buzzing": false,
     "testing": true

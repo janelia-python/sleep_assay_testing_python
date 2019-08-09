@@ -41,9 +41,7 @@ class SleepAssayTesting():
     def test_assay(self):
         print('Testing assay')
 
-        print('Setting time')
-        self.controller.set_time(time.time())
-        time.sleep(1)
+        self.controller.set_time(1565375039.191516)
 
         print('Setting properties')
         self.controller.camera_trigger_frequency('setValue',1)
@@ -65,6 +63,9 @@ class SleepAssayTesting():
         test_count = 1000
         test = 0
         while test < test_count:
+            self.controller.set_time(1565375039.191516)
+            time.sleep(1)
+
             now = datetime.now().isoformat(timespec='minutes')
             print("starting test {0} at {1}".format(test,now))
 
