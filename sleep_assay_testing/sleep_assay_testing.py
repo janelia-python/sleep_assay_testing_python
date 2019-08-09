@@ -2,6 +2,8 @@ from __future__ import print_function, division
 import time
 import atexit
 import os
+import json
+from datetime import datetime
 
 from modular_client import ModularClient
 
@@ -53,25 +55,42 @@ class SleepAssayTesting():
         self.controller.visible_backlight_frequency('setValue',2)
         self.controller.visible_backlight_duty_cycle('setValue',4)
 
+        self.controller.remove_all_experiment_days()
         experiment_day = self.controller.add_experiment_day()
         self.controller.set_experiment_day_visible_backlight(experiment_day,10,0,24)
         self.controller.set_experiment_day_white_light(experiment_day,10)
-        print(self.controller.get_experiment_info())
         print()
         time.sleep(4)
 
-        self.controller.test_assay()
+        test_count = 1000
+        test = 0
+        while test < test_count:
+            now = datetime.now().isoformat(timespec='minutes')
+            print("starting test {0} at {1}".format(test,now))
 
-        assay_status = self.controller.get_assay_status()
-        while assay_status['phase'] != 'ASSAY_FINISHED':
+            self.controller.test_assay()
+
+            assay_status_list = []
             assay_status = self.controller.get_assay_status()
-            print('phase: {0}'.format(assay_status['phase']))
-            print('assay_day: {0}'.format(assay_status['assay_day']))
-            print('phase_day: {0}'.format(assay_status['phase_day']))
-            print('white_light_power: {0}'.format(assay_status['white_light_power']))
-            print('visible_backlight_intensity: {0}'.format(assay_status['visible_backlight_intensity']))
-            print()
-            time.sleep(1)
+            while assay_status['phase'] != 'ASSAY_FINISHED':
+                assay_status = self.controller.get_assay_status()
+                assay_status.pop('time_now')
+                assay_status.pop('date_time_now')
+                assay_status_list.append(assay_status)
+                time.sleep(1)
+            if test == 0:
+                with open('test_data.json','w') as json_file:
+                    json.dump(assay_status_list,json_file,indent=2)
+            else:
+                with open('test_data.json','r') as json_file:
+                    test_data = json.load(json_file)
+                if assay_status_list == test_data:
+                    print('test {} matched test 0'.format(test))
+                else:
+                    print('test {} did not match test 0!!!'.format(test))
+                    with open('test_data_{}.json'.format(test),'w') as json_file:
+                        json.dump(assay_status_list,json_file,indent=2)
+            test += 1
 
     def _exit_sleep_assay_testing(self):
         pass
