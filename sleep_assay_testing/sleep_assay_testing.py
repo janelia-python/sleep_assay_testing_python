@@ -73,8 +73,6 @@ class SleepAssayTesting():
             print("starting test {0} at {1}".format(test,now))
 
             self.controller.test_assay()
-            # shift in time so it does not line up with transitions
-            time.sleep(0.0777)
 
             assay_status_list = []
             assay_status = self.controller.get_assay_status()
