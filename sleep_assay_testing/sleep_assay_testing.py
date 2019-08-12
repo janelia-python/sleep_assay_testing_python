@@ -4,6 +4,8 @@ import atexit
 import os
 import json
 from datetime import datetime
+import argparse
+import matplotlib.pyplot as plt
 
 from modular_client import ModularClient
 
@@ -35,11 +37,12 @@ class SleepAssayTesting():
 
     def __init__(self,*args,**kwargs):
         atexit.register(self._exit_sleep_assay_testing)
-        print('Locating modular clients...')
-        self.controller = ModularClient()
 
     def test_assay(self):
         print('Testing assay')
+
+        print('Locating modular clients...')
+        self.controller = ModularClient()
 
         self.controller.set_time(1565375039.191516)
 
@@ -70,6 +73,8 @@ class SleepAssayTesting():
             print("starting test {0} at {1}".format(test,now))
 
             self.controller.test_assay()
+            # shift in time so it does not line up with transitions
+            time.sleep(0.0777)
 
             assay_status_list = []
             assay_status = self.controller.get_assay_status()
@@ -93,6 +98,28 @@ class SleepAssayTesting():
                         json.dump(assay_status_list,json_file,indent=2)
             test += 1
 
+    def plot_assay_data(self):
+        with open('test_data.json','r') as json_file:
+            good_test_data = json.load(json_file)
+        t = [sample['assay_day'] for sample in good_test_data]
+        white_light_power = [sample['white_light_power'] for sample in good_test_data]
+        plt.step(t,white_light_power,label='good')
+
+        offset_delta = 100.0
+        offset = 0.0
+        data_files = [f for f in os.listdir('.') if os.path.isfile(f) and 'test_data_' in f]
+        for data_file in data_files:
+            offset += offset_delta
+            with open(data_file,'r') as json_file:
+                bad_test_data = json.load(json_file)
+            white_light_power = [sample['white_light_power'] + offset for sample in bad_test_data]
+            plt.step(t,white_light_power,label=data_file.replace('test_data_','').replace('.json',''))
+
+        plt.legend()
+        plt.show()
+
+
+
     def _exit_sleep_assay_testing(self):
         pass
 
@@ -101,4 +128,19 @@ class SleepAssayTesting():
 if __name__ == '__main__':
 
     dev = SleepAssayTesting()
-    dev.test_assay()
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-t','--test',
+                        help='Test assay.',
+                        action='store_true')
+    parser.add_argument('-p','--plot',
+                        help='Plot assay test results.',
+                        action='store_true')
+    args = parser.parse_args()
+
+    if args.plot:
+        dev.plot_assay_data()
+    elif args.test:
+        dev.test_assay()
+    else:
+        parser.print_help()
