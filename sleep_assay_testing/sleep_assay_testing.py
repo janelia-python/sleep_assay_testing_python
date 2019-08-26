@@ -63,7 +63,7 @@ class SleepAssayTesting():
         print()
         time.sleep(4)
 
-        test_count = 1000
+        test_count = 10000
         test = 0
         while test < test_count:
             self.controller.set_time(1565375039.191516)
@@ -111,7 +111,10 @@ class SleepAssayTesting():
             with open(data_file,'r') as json_file:
                 bad_test_data = json.load(json_file)
             white_light_power = [sample['white_light_power'] + offset for sample in bad_test_data]
-            plt.step(t,white_light_power,label=data_file.replace('test_data_','').replace('.json',''))
+            try:
+                plt.step(t,white_light_power,label=data_file.replace('test_data_','').replace('.json',''))
+            except ValueError:
+                pass
 
         plt.legend()
         plt.show()
