@@ -25,6 +25,8 @@ else:
 
 
 DEBUG = False
+TEST_COUNT_DEFAULT = 100
+STATUS_COUNT_DEFAULT = 1000
 
 class SleepAssayTesting():
     '''
@@ -38,8 +40,12 @@ class SleepAssayTesting():
     def __init__(self,*args,**kwargs):
         atexit.register(self._exit_sleep_assay_testing)
 
-    def test_assay(self):
+    def test_assay(self,
+                   test_count=TEST_COUNT_DEFAULT,
+                   status_count_max=STATUS_COUNT_DEFAULT,
+                   stop_on_mismatch=False):
         print('Testing assay')
+        print('test_count = {0}, status_count_max = {1}, stop_on_mismatch = {2}'.format(test_count,status_count_max,stop_on_mismatch))
 
         print('Locating modular clients...')
         self.controller = ModularClient()
@@ -63,11 +69,12 @@ class SleepAssayTesting():
         print()
         time.sleep(4)
 
-        test_count = 10000
         test = 0
         while test < test_count:
+            self.controller.stop_assay()
+            time.sleep(0.25)
             self.controller.set_time(1565375039.191516)
-            time.sleep(1)
+            time.sleep(0.25)
 
             now = datetime.now().isoformat(timespec='minutes')
             print("starting test {0} at {1}".format(test,now))
@@ -76,12 +83,14 @@ class SleepAssayTesting():
 
             assay_status_list = []
             assay_status = self.controller.get_assay_status()
-            while assay_status['phase'] != 'ASSAY_FINISHED':
+            status_count = 0
+            while (assay_status['phase'] != 'ASSAY_FINISHED') and (status_count < status_count_max):
                 assay_status = self.controller.get_assay_status()
                 assay_status.pop('time_now')
                 assay_status.pop('date_time_now')
                 assay_status_list.append(assay_status)
                 time.sleep(1)
+                status_count += 1
             if test == 0:
                 with open('test_data.json','w') as json_file:
                     json.dump(assay_status_list,json_file,indent=2)
@@ -94,6 +103,8 @@ class SleepAssayTesting():
                     print('test {} did not match test 0!!!'.format(test))
                     with open('test_data_{}.json'.format(test),'w') as json_file:
                         json.dump(assay_status_list,json_file,indent=2)
+                    if stop_on_mismatch:
+                        return
             test += 1
 
     def plot_assay_data(self):
@@ -134,6 +145,19 @@ if __name__ == '__main__':
     parser.add_argument('-t','--test',
                         help='Test assay.',
                         action='store_true')
+    parser.add_argument('--test-count',
+                        help='Number of times to run test.',
+                        action='store',
+                        type=int,
+                        default=TEST_COUNT_DEFAULT)
+    parser.add_argument('--status-count',
+                        help='Maximum number of status inquiries to save.',
+                        action='store',
+                        type=int,
+                        default=STATUS_COUNT_DEFAULT)
+    parser.add_argument('-s','--stop-on-mismatch',
+                        help='Stop tests on first mismatch.',
+                        action='store_true')
     parser.add_argument('-p','--plot',
                         help='Plot assay test results.',
                         action='store_true')
@@ -142,6 +166,8 @@ if __name__ == '__main__':
     if args.plot:
         dev.plot_assay_data()
     elif args.test:
-        dev.test_assay()
+        dev.test_assay(test_count=args.test_count,
+                       status_count_max=args.status_count,
+                       stop_on_mismatch=args.stop_on_mismatch)
     else:
         parser.print_help()

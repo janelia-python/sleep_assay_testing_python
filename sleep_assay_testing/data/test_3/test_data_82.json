@@ -1,0 +1,41 @@
+[
+  {
+    "assay_day": 0.25,
+    "phase": "ENTRAINMENT",
+    "pwr": 0.0,
+    "pwr_lb": 0.0,
+    "pwr_gtr": false,
+    "phase_day": 0.25,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.291667,
+    "phase": "ENTRAINMENT",
+    "pwr": 0.0,
+    "pwr_lb": 0.0,
+    "pwr_gtr": false,
+    "phase_day": 0.291667,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.333333,
+    "phase": "ENTRAINMENT",
+    "pwr": 0.0,
+    "pwr_lb": 0.0,
+    "pwr_gtr": false,
+    "phase_day": 0.333333,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  }
+]
