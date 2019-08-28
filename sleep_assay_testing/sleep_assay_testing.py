@@ -26,7 +26,7 @@ else:
 
 DEBUG = False
 TEST_COUNT_DEFAULT = 100
-STATUS_COUNT_DEFAULT = 1000
+STATUS_COUNT_MAX_DEFAULT = 1000
 
 class SleepAssayTesting():
     '''
@@ -42,7 +42,7 @@ class SleepAssayTesting():
 
     def test_assay(self,
                    test_count=TEST_COUNT_DEFAULT,
-                   status_count_max=STATUS_COUNT_DEFAULT,
+                   status_count_max=STATUS_COUNT_MAX_DEFAULT,
                    stop_on_mismatch=False):
         print('Testing assay')
         print('test_count = {0}, status_count_max = {1}, stop_on_mismatch = {2}'.format(test_count,status_count_max,stop_on_mismatch))
@@ -72,9 +72,9 @@ class SleepAssayTesting():
         test = 0
         while test < test_count:
             self.controller.stop_assay()
-            time.sleep(0.25)
+            time.sleep(0.5)
             self.controller.set_time(1565375039.191516)
-            time.sleep(0.25)
+            time.sleep(0.5)
 
             now = datetime.now().isoformat(timespec='minutes')
             print("starting test {0} at {1}".format(test,now))
@@ -88,8 +88,10 @@ class SleepAssayTesting():
                 assay_status = self.controller.get_assay_status()
                 assay_status.pop('time_now')
                 assay_status.pop('date_time_now')
+                assay_status['assay_day'] = round(assay_status['assay_day'],2)
+                assay_status['phase_day'] = round(assay_status['phase_day'],2)
                 assay_status_list.append(assay_status)
-                time.sleep(1)
+                time.sleep(1.5)
                 status_count += 1
             if test == 0:
                 with open('test_data.json','w') as json_file:
@@ -150,11 +152,11 @@ if __name__ == '__main__':
                         action='store',
                         type=int,
                         default=TEST_COUNT_DEFAULT)
-    parser.add_argument('--status-count',
+    parser.add_argument('--status-count-max',
                         help='Maximum number of status inquiries to save.',
                         action='store',
                         type=int,
-                        default=STATUS_COUNT_DEFAULT)
+                        default=STATUS_COUNT_MAX_DEFAULT)
     parser.add_argument('-s','--stop-on-mismatch',
                         help='Stop tests on first mismatch.',
                         action='store_true')
@@ -167,7 +169,7 @@ if __name__ == '__main__':
         dev.plot_assay_data()
     elif args.test:
         dev.test_assay(test_count=args.test_count,
-                       status_count_max=args.status_count,
+                       status_count_max=args.status_count_max,
                        stop_on_mismatch=args.stop_on_mismatch)
     else:
         parser.print_help()
