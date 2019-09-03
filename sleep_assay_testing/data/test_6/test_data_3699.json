@@ -1,0 +1,772 @@
+[
+  {
+    "assay_day": 0.25,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.25,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.33,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.33,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.38,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.38,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.46,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.46,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.5,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.5,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.58,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.58,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.62,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.62,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.71,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.71,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.75,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.75,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.83,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.83,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.88,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.88,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 0.96,
+    "phase": "ENTRAINMENT",
+    "phase_day": 0.96,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.0,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.0,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.08,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.08,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.12,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.12,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.21,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.21,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.25,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.25,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.33,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.33,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.38,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.38,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.46,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.46,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.5,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.5,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.58,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.58,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.62,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.62,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.71,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.71,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.75,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.75,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.83,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.83,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.88,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.88,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 1.96,
+    "phase": "ENTRAINMENT",
+    "phase_day": 1.96,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.0,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.0,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.08,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.08,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.12,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.12,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.21,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.21,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.25,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.25,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.33,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.33,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.38,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.38,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.46,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.46,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.5,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.5,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.58,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.58,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.62,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.62,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.71,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.71,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.75,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.75,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.83,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.83,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.88,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.88,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 2.96,
+    "phase": "ENTRAINMENT",
+    "phase_day": 2.96,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.0,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.0,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.08,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.08,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.12,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.12,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.21,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.21,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.25,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.25,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.33,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.33,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.38,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.38,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.46,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.46,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.5,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.5,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.58,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.58,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.62,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.62,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.71,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.71,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.79,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.79,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.83,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.83,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.92,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.92,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 3.96,
+    "phase": "EXPERIMENT",
+    "phase_day": 0.96,
+    "visible_backlight_intensity": 10.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.04,
+    "phase": "RECOVERY",
+    "phase_day": 0.04,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.08,
+    "phase": "RECOVERY",
+    "phase_day": 0.08,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.17,
+    "phase": "RECOVERY",
+    "phase_day": 0.17,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.21,
+    "phase": "RECOVERY",
+    "phase_day": 0.21,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.29,
+    "phase": "RECOVERY",
+    "phase_day": 0.29,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.33,
+    "phase": "RECOVERY",
+    "phase_day": 0.33,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.42,
+    "phase": "RECOVERY",
+    "phase_day": 0.42,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.46,
+    "phase": "RECOVERY",
+    "phase_day": 0.46,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 10.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.54,
+    "phase": "RECOVERY",
+    "phase_day": 0.54,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.58,
+    "phase": "RECOVERY",
+    "phase_day": 0.58,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.67,
+    "phase": "RECOVERY",
+    "phase_day": 0.67,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.71,
+    "phase": "RECOVERY",
+    "phase_day": 0.71,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.79,
+    "phase": "RECOVERY",
+    "phase_day": 0.79,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.83,
+    "phase": "RECOVERY",
+    "phase_day": 0.83,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.92,
+    "phase": "RECOVERY",
+    "phase_day": 0.92,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 4.96,
+    "phase": "RECOVERY",
+    "phase_day": 0.96,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  },
+  {
+    "assay_day": 5.0,
+    "phase": "ASSAY_FINISHED",
+    "phase_day": 1.0,
+    "visible_backlight_intensity": 0.0,
+    "white_light_power": 0.0,
+    "buzzer_power": 0.0,
+    "buzzing": false,
+    "testing": true
+  }
+]
