@@ -6,7 +6,7 @@
   - Name :: sleep_assay_testing_python
   - Version :: 1.0.0
   - License :: BSD
-  - URL :: https://github.com/janelia-pypi/sleep_assay_testing_python
+  - URL :: https://github.com/janelia-python/sleep_assay_testing_python
   - Author :: Peter Polidoro
   - Email :: peter@polidoro.io
 

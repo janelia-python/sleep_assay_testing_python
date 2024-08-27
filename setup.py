@@ -21,7 +21,7 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/janelia-pypi/sleep_assay_testing_python',
+    url='https://github.com/janelia-python/sleep_assay_testing_python',
 
     # Author details
     author='Peter Polidoro',
